@@ -28,7 +28,7 @@ export async function POST(request) {
 export async function DELETE(request) {
     const mongoId = await request.nextUrl.searchParams.get('mongoId');
     await TodoModel.findByIdAndDelete(mongoId)
-    return NextResponse.json({msg:"Todo Deleted"})
+    return NextResponse.json({msg:"Todo Deleted"});
 }
 
 export async function PUT(request) {
@@ -38,5 +38,5 @@ export async function PUT(request) {
             isCompleted:true
         }
     })
-    return NextResponse.json({msg:"Todo Completed"})
+    return NextResponse.json({msg:"Todo Completed"});
 }
