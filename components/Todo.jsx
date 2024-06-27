@@ -1,22 +1,24 @@
 import React from 'react'
+import {CheckOutlined,DeleteOutlined} from '@ant-design/icons'
 
-const Todo = () => {
+const Todo = ({id,title,description,mongoId,complete}) => {
     return (
-        <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+        <tr className="odd:bg-slate-100 even:bg-gray-200 odd:dark:bg-gray-200 even:dark:bg-gray-100">
             <td className="px-6 py-4">
-                Silver
+                {id+1}
             </td>
             <td className="px-6 py-4">
-                Laptop
+                {title}
             </td>
             <td className="px-6 py-4">
-                $2999
+                {description}
             </td>
             <td className="px-6 py-4">
-                $2999
+                {complete ? "Completed" : "Pending"}
             </td>
-            <td className="px-6 py-4">
-                <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+            <td className="px-6 py-4 flex gap-3">
+                <button className='bg-green-700 text-white px-4 rounded-md py-1'><CheckOutlined /></button>
+                <button className='bg-red-700 text-white px-4 rounded-md py-1'><DeleteOutlined /></button>
             </td>
         </tr>
     )
