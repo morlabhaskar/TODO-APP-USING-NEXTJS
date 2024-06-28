@@ -65,8 +65,8 @@ export default function Home() {
     return (
         <>
             <ToastContainer theme="dark" />
-            <h1 className="w-[80%] mx-auto mt-9 font-bold drop-shadow-lg max-w-[300px] text-purple-700 text-3xl px-2">TODO NEXT JS APP</h1>
-            <form onSubmit={onSubmitHandler} className="flex flex-col items-start gap-2 w-[80%] max-w-[600px] mt-14 px-2 mx-auto">
+            <h1 className="w-[80%] mx-auto mt-5 font-bold drop-shadow-lg max-w-[300px] text-purple-700 text-3xl px-2">TODO NEXT JS APP</h1>
+            <form onSubmit={onSubmitHandler} className="flex flex-col items-start gap-2 w-[80%] max-w-[600px] mt-8 px-2 mx-auto">
                 <input type="text" name="title" value={formData.title} onChange={onChangeHandler} placeholder="Enter Title" className="px-3 py-2 border-2 w-full" />
                 <textarea name="description" value={formData.description} onChange={onChangeHandler} placeholder="Enter Description" className="px-3 py-2 border-2 w-full"></textarea>
                 <button type="submit" className="bg-orange-600 py-3 px-11 text-white rounded-2xl">Add Todo</button>
@@ -74,7 +74,7 @@ export default function Home() {
 
 
             <div className="relative overflow-x-auto sm:rounded-lg">
-                <table className="w-[80%] mt-20 mx-auto text-sm text-center rtl:text-right text-gray-800 ">
+                <table className="w-[80%] mt-10 mx-auto text-sm text-center rtl:text-right text-gray-800 ">
                     <thead className="text-xs text-white uppercase bg-gray-50 ">
                         <tr className="bg-purple-800">
                             <th scope="col" className="px-3 py-4">
