@@ -1,5 +1,5 @@
 "use client"  //In nextjs this is required for client side
-import Todo from "@/components/todo";
+import Todo from "@/components/Todo";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
